@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Marathon Registration</title>
+	</head>
+	<body>
+		<h1>Race Registration!</h1>
+		<form action="/bogo">
+			<div>
+				<label for="first">First Name</label>
+				<input type="text" name="first_name" id="first" required>
+				<label for="last">Last Name</label>
+				<input type="text" name="last_name" id="last" required>
+			</div>
+			<p>Select a race:</p>
+			<div>
+				<input type="radio" name="race_type" id="fun" value="fun_run">
+				<label for="fun">Fun Run 5k</label>
+			</div>
+			<div>
+				<input type="radio" name="race_type" id="half" value="half_run">
+				<label for="half">Half Marathon</label>
+			</div>
+			<div>
+				<input type="radio" name="race_type" id="full" value="full_run">
+				<label for="full">Full Marathon</label>
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required>
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" required>
+			</div>
+			<div>
+				<label for="age">Select Age Group</label>
+				<select name="age_group" id="age">
+					<option value="under18">under 18</option>
+					<option value="18-30">18-30</option>
+					<option value="30-50">30-50</option>
+					<option value="50+">50+</option>
+				</select>
+			</div>
+			<button>Register!</button>
+		</form>
+	</body>
+</html>

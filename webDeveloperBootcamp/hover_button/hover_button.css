@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+    background-color: #151b29;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-family: inherit;
+    border: 2px #ffa260 solid;
+    color: #ffa260;
+    background: none;
+    font-size: 1em;
+    padding: 1em 2em;
+    transition: all 0.25s;
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+

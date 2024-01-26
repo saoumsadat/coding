@@ -1,0 +1,17 @@
+body {
+    margin: 0
+}
+img {
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+nav {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 500;
+    width: 30%;
+    margin: calc(10%/6);
+    border-bottom: 2px solid grey;
+    font-size: large;
+}
