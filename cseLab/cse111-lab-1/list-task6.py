@@ -7,7 +7,8 @@ def strToList(s):
             num_str = ''
         else:
             num_str += s[x]
-        if x == (len(s) - 1):
+
+        if x == (len(s) - 1) and s[x] != ' ':
             arr.append(int(num_str))
             break
     return arr
@@ -19,10 +20,10 @@ k = arr1[1]
 
 s2 = input()
 arr2 = strToList(s2)
-
+# print(arr2)
 member = 0
 for i in range(0, n):
-    if (i + k) <= 5:
+    if (arr2[i] + k) <= 5:
         member += 1
 
 team = member // 3

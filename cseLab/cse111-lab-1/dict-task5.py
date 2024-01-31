@@ -15,8 +15,8 @@ def makeDictFromWord():
 d1 = makeDictFromWord()
 d2 = makeDictFromWord()
 
-print(d1)
-print(d2)
+# print(d1)
+# print(d2)
 
 if d1 == d2:
   print("Those strings are anagrams")

@@ -15,18 +15,22 @@ def arrToStr(a):
 s = input()
 low = []
 up = []
-dig = []
+odd = []
+even = []
 for x in s:
     if x >= 'a' and x <= 'z':
         low.append(x)
     elif x >= 'A' and x <= 'Z':
         up.append(x)
-    elif x >= '0' and x <= '9':
-        dig.append(x)
+    elif (int(x) % 2 != 0):
+        odd.append(x)
+    elif (int(x) % 2 == 0):
+        even.append(x)
 
 sort(low)
 sort(up)
-sort(dig)
+sort(odd)
+sort(even)
 
-print(arrToStr(low) + arrToStr(up) + arrToStr(dig))
+print(arrToStr(low) + arrToStr(up) + arrToStr(odd) + arrToStr(even))
 
