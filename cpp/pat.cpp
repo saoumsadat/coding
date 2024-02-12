@@ -114,5 +114,5 @@ int main()
 {
 	int x;
 	cin >> x;
-	pattern14(x);
+	pattern13(x);
 }
