@@ -10,5 +10,4 @@ def assign_students_to_sections(section, *names):
 		d[section[ind]].append(name)
 	return d
 
-final_dict = assign_students_to_sections('ABCDE', 'Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank', 'Grace')
-print(final_dict)
+print(assign_students_to_sections('ABCDE', 'Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank', 'Grace'))
