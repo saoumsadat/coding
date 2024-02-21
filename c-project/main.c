@@ -6,11 +6,11 @@ int displayMainMenu()
 {
 	int choice;
 	printf("\nWelcome to BOGO Contacts\n");
-	printf("1. Add contact\n");
-	printf("2. Remove contact\n");
-	printf("3. Edit contact\n");
-	printf("4. Display contact\n");
-	printf("0. Exit\n");
+	printf("1. Bogo will add a contact\n");
+	printf("2. Bogo will remove a contact\n");
+	printf("3. Bogo will edit a contact\n");
+	printf("4. Bogo will display a contact\n");
+	printf("0. Bogo will kick you out\n");
 	scanf("%d", &choice);
 	return choice;
 }
@@ -26,13 +26,13 @@ void addContact()
 {
 	struct Contact contact;
 	
-	printf("Enter name: ");
+	printf("Bogo needs a name: ");
 	scanf(" %[^\n]", contact.name);
 
-	printf("Enter phone: ");
+	printf("Bogo needs a phone: ");
 	scanf(" %[^\n]", contact.phone);
 
-	printf("Enter email: ");
+	printf("Bogo needs a email: ");
 	scanf(" %[^\n]", contact.email);
 
 	// opening file
@@ -48,7 +48,7 @@ void addContact()
 	fprintf(aFile, "%s\n%s\n%s\n---\n", contact.name, contact.phone, contact.email);
 	fclose(aFile);
 
-	printf("Contact has been added\n");
+	printf("Bogo has added a contact\n");
 }
 
 void removeContact()
@@ -57,7 +57,7 @@ void removeContact()
 	char line[50];
 	char searchName[50];
 	char temp_file[] = "temp.txt";
-	printf("Enter contact name to remove: ");
+	printf("Bogo needs the contact name to remove: ");
 	scanf(" %[^\n]", searchName);
 
 	rFile = fopen("contact.txt", "r");
@@ -113,7 +113,7 @@ void removeContact()
 		return;
 	}
 
-	printf("Contact has been removed\n");
+	printf("Bogo has removed a contact\n");
 }
 
 void editContact()
@@ -130,9 +130,9 @@ void editContact()
 	char oldInfo[50];
 	char newInfo[50];
 
-	printf("Enter old %s: ", infoToEdit);
+	printf("Give Bogo the old %s: ", infoToEdit);
 	scanf(" %[^\n]", oldInfo);
-	printf("Enter new %s: ", infoToEdit);
+	printf("Give Bogo the new %s: ", infoToEdit);
 	scanf(" %[^\n]", newInfo);
 
 	// file read write prep
@@ -188,7 +188,7 @@ void editContact()
 		return;
 	}
 	
-	printf("Contact has been edited\n");
+	printf("Bogo has edited a contact\n");
 }
 
 void displayContact()
@@ -196,7 +196,7 @@ void displayContact()
 	FILE *rFile;
 	rFile = fopen("contact.txt", "r");
 	char searchName[50];
-	printf("Enter contact name: ");
+	printf("Bogo needs the contact name: ");
 	scanf(" %[^\n]", searchName);
 
 	char line[50];
@@ -251,7 +251,7 @@ int main()
 		}
 		else
 		{
-			printf("INVALID CHOICE!!\n");
+			printf("CAUTION: DON'T MAKE BOGO ANGRY.\n");
 		}
 	}
 
