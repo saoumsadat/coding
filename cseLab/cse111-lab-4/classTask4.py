@@ -25,7 +25,7 @@ class StudentDatabase:
         #make value for final grades which is another dictionary
         gradeValue = {courseTuple: finalGrade}
 
-        #finally add
+        #finally add to the final dictionary
         self.grades[session] = gradeValue
     
     def printDetails(self):
