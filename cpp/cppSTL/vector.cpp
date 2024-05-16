@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void printVec(auto v)
+void printVec(vector<int> v)
 {
 	if (!(v.size()))
 	{
